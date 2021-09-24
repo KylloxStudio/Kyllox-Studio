@@ -1,0 +1,1592 @@
+@charset "utf-8";
+
+@import url("framework.css");
+
+/* Copyright [Google Fonts - Google] [https://fonts.google.com] */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Copyright [인피니티 산스 - 위메이드(WEMADE)] [https://www.wemade.com/Company/Ci] */
+@font-face {
+    font-family: '인피니티산스 Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '인피니티산스 Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '인피니티산스 CondBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-CondBoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Copyright [나눔스퀘어 - Naver] [https://hangeul.naver.com/font] */
+@font-face {
+    font-family: '나눔스퀘어 Regular';
+    src: url('../fonts/NanumSquareR.ttf');
+}
+
+/* Copyright [PermanentMarker Font - Google] [https://fonts.google.com/specimen/Permanent+Marker] */
+@font-face {
+    font-family: 'PermanentMaker';
+    src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+/* Copyright [Raleway Font - Google] [https://fonts.google.com/specimen/Raleway?query=Rale#standard-styles] */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+/* Copyright [Facón Font - Alejo Bergmann] - readme.txt
+Please read this before using the font.
+
+-You may use this version of Facón Font for personal and commercial use.
+
+-You may not Sell or Distribute Facón Font for profit or alter it in
+any way without asking me first.  (e-mail  alejobergmann@gmail.com)
+
+Thank you for downloading/donating and using Facón Font, designed by Alejo Bergmann.
+
+Open Font License. Inspired in Run logo by Samm McAlear. Base font: Roboto Black Italic.
+
+---
+
+www.designals.net
+www.be.net/alejobergmann
+www.rosariodesign.com
+*/
+@font-face {
+    font-family: 'Facon';
+    src: url('../fonts/Facon.ttf');
+}
+
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+
+.row0 {
+    border-bottom: 0.25rem solid;
+}
+
+.row1 {
+    border-bottom: 0.25rem solid;
+}
+
+.row2 {
+    border-bottom: 0.1625rem solid;
+}
+
+.row4 {
+    border-bottom: 0.1625rem solid;
+}
+
+a {
+    color: #82b7df;
+    text-decoration: none;
+}
+
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #313131;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem;
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+
+.header-logo-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
+    line-height: 0.75;
+    float: left;
+}
+
+#logo-text {
+    cursor: pointer;
+}
+
+.header-logo-text {
+    display: inline-block;
+    font-family: 'Facon';
+    font-size: 2.25rem;
+    color: #373737;
+    text-align: left;
+}
+
+.header-text {
+    display: inline-block;
+    font-family: 'PermanentMaker';
+    font-size: 1.35rem;
+    color: #aaa;
+    text-align: left;
+}
+
+#slide-menu li a {
+    display: block;
+    color: inherit;
+    border-color: transparent;
+    z-index: 1000;
+}
+
+#slide-menu .slide-item .active,
+#slide-menu .slide-item a:hover,
+#slide-menu .slide-item li:hover>a,
+#slide-menu .slide-item-sub .active,
+#slide-menu .slide-item-sub a:hover,
+#slide-menu .slide-item-sub li:hover>a {
+    color: #82B7DF;
+}
+
+#slide-menu .slide-pages-wrapper .active,
+#slide-menu .slide-pages-wrapper a:hover,
+#slide-menu .slide-pages-wrapper li:hover>a,
+#slide-menu .slide-lang-wrapper .active,
+#slide-menu .slide-lang-wrapper a:hover,
+#slide-menu .slide-lang-wrapper li:hover>a {
+    color: #82B7DF;
+}
+
+#slide-menu .slide-go-arrow .active,
+#slide-menu .slide-drop-arrow .active {
+    color: #777777;
+}
+
+#slide-menu .slide-go-arrow a:hover,
+#slide-menu .slide-go-arrow li:hover>a,
+#slide-menu .slide-drop-arrow a:hover,
+#slide-menu .slide-drop-arrow li:hover>a {
+    color: #272727;
+}
+
+.slide-menu-container {
+    display: none;
+    position: absolute;
+    top: 89px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 85%;
+    z-index: 999;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: auto !important;
+}
+
+@media (max-width: 578px) {
+    .slide-menu-container {
+        width: 100%;
+    }
+}
+
+.slide-menu {
+    color: #474747;
+}
+
+.slide-item {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #474747;
+    border-top: 1.25px solid #e9e9e9;
+    border-bottom: 1.25px solid #e9e9e9;
+    cursor: pointer;
+}
+
+.slide-item:hover {
+    color: #82b7df;
+}
+
+.slide-link {
+    color: #474747;
+    padding: 14px 20px;
+}
+
+#slide-menu-pages,
+#slide-menu-lang {
+    display: none;
+}
+
+.slide-item-sub {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #474747;
+    border-top: 2.5px solid #e9e9e9;
+    cursor: pointer;
+}
+
+.slide-link-sub {
+    color: #474747;
+    padding: 14px 30px;
+}
+
+.slide-go-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    color: #777777;
+    border-left: 1.25px solid #e9e9e9;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1020;
+    font-size: 21px;
+}
+
+.slide-go-arrow a {
+    padding: 14px 21.5px;
+}
+
+.slide-drop-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    color: #777777;
+    border-left: 1.25px solid #e9e9e9;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1020;
+    font-size: 21px;
+}
+
+.slide-drop-arrow a {
+    padding: 14px 20px;
+}
+
+#pageintro {
+    padding: 220px 0;
+}
+
+#pageintro .heading {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#pageintro footer {
+    margin-top: 25px;
+}
+
+
+#main {
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    background-color: #373737;
+    overflow: hidden;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    height: 88vh;
+    background-position: 25% 50%;
+    background-image: url('../images/main-background.jpg');
+    background-size: cover;
+}
+
+.main-text-container {
+    position: absolute;
+    top: 35%;
+	left: 5%;
+    transform: translate(0, -35%);
+    text-align: left;
+}
+
+@media (max-width: 768px) { 
+    .main-text-container {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        transform: translate(0, -25%);
+        text-align: left;
+    }
+}
+
+.main-title {
+    font-family: 'Raleway Bold';
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-text {
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 1.31;
+    letter-spacing: 1px;
+    text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+
+#contact .mail-link {
+    display: inline-block;
+    position: relative;
+    min-height: 30px;
+    padding: 0 0 0 40px;
+    margin-top: 3.5rem;
+    line-height: 1;
+}
+
+#contact .mail-link i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    color: #82B7DF;
+    border: 1.5px solid #82B7DF;
+    border-radius: 50%;
+}
+
+#contact .mail-link a {
+    display: inline-block;
+}
+
+#contact .mail-link a:hover {
+    color: #70B7F3;
+    text-decoration: underline;
+}
+
+#contact .mail-link span {
+    display: block;
+    font-family: '나눔스퀘어 Regular';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 0;
+}
+
+.hexagon-wrap {
+    margin: 1.75rem 8.5rem 0 0;
+}
+
+.fa-stack {
+    float: right;
+    position: relative;
+	width: 3.5rem;
+	height: 3.5rem;
+    margin: 0 7.5px;
+}
+
+.fa-stack .hexagon {
+	position: absolute;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url('../images/hexagon-white.png') center center no-repeat;
+	background-size: 3.5rem 3.5rem;
+	transition: all 0.2s ease;
+}
+
+.fa-stack:hover .hexagon {
+	background: url('../images/hexagon-blue.png') center center no-repeat;
+	background-size: 3.5rem 3.5rem;
+}
+
+.fa-stack-1x {
+	font-size: 1.75rem;
+    line-height: 3.5rem;
+	color: #484a46;
+	transition: all 0.2s ease;
+}
+
+.fa-stack:hover .fa-stack-1x {
+	color: #fff;
+}
+
+.contact-title {
+    display: inline-block;
+    font-family: "인피니티산스 Bold";
+    font-size: 3.125rem;
+    color: #FFFFFF;
+}
+
+.contact-form .label {
+    display: inline-block;
+    font-family: '나눔스퀘어 Regular';
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.contact-wrapper {
+    flex: 0 0 auto;
+    width: 75%
+}
+
+.contact-wrapper-02 {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.contact-form {
+    width: 50%;
+    float: right;
+}
+
+.contact-wrap {
+    display: inline-block;
+    max-width: 50%;
+    padding: 24px 0 0 12px;
+}
+
+@media (max-width: 578px) {
+    .contact-form {
+        width: 100%;
+        float: right;
+        margin-top: 2.5rem;
+    }
+    
+    .contact-wrap {
+        display: inline-block;
+        max-width: 100%;
+        padding: 24px 0 0 12px;
+    }
+}
+
+.contact-text {
+    display: inline-block;
+    font-family: '나눔스퀘어 Regular';
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.contact-wrap li {
+    margin: 0 0 0 16px;
+}
+
+.develoment-title {
+    display: inline-block;
+    font-family: "인피니티산스 Bold";
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.develoment-text {
+    display: inline-block;
+    font-family: '나눔스퀘어 Regular';
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.75rem;
+    font-size: 1rem;
+    font-family: "인피니티산스 Bold";
+    font-weight: 400;
+    line-height: 1.31;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control .error {
+    border-color: #ff1b1b;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(18, 128, 218, 0.35);
+}
+
+.contact-form .error {
+    font-family: "인피니티산스 Bold";
+    font-size: 1rem;
+    color: #ff1b1b;
+}
+
+#error-label {
+    width: 100%;
+}
+
+.submit {
+    display: block;
+    font-family: "인피니티산스 Bold";
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 10px 35px;
+    margin: 0.75rem 0 1.5rem 0;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    color: #FFFFFF;
+    background-color: #70B7F3;
+    border: 1px solid #70B7F3;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#copyright {
+    padding: 20px 0;
+    color: #FFFFFF;
+    font-family: "인피니티산스 Regular";
+}
+
+#copyright .text {
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainnav,
+#breadcrumb,
+.sidebar nav {
+    line-height: normal;
+}
+
+#mainnav .drop::after,
+#mainnav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+    position: absolute;
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+
+/* Top Navigation */
+
+#mainnav {
+    position: relative;
+    margin-top: -1px;
+    z-index: 999;
+}
+
+#mainnav ul {
+    text-transform: uppercase;
+}
+
+#mainnav ul ul {
+    position: absolute;
+    width: 180px;
+    text-transform: none;
+}
+
+#mainnav ul ul ul {
+    left: 180px;
+    top: 0;
+}
+
+#mainnav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#mainnav li:last-child {
+    margin-right: 0;
+}
+
+#mainnav li li {
+    width: 100%;
+    margin: 0;
+}
+
+#mainnav li a {
+    display: block;
+    padding: 30px 0;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+#mainnav li li a {
+    border-width: 0 0 1px 0;
+}
+
+#mainnav .drop {
+    padding-left: 15px;
+}
+
+#mainnav li li a,
+#mainnav li li .drop {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+#mainnav .drop::after,
+#mainnav li li .drop::after {
+    content: "\f0d7";
+}
+
+#mainnav .drop::after {
+    top: 35px;
+    left: 5px;
+}
+
+#mainnav li li .drop::after {
+    top: 15px;
+    left: 5px;
+}
+
+#mainnav ul ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#mainnav ul li:hover>ul {
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.65s;
+    padding-top: 80px;
+}
+
+#mainnav ul li #second-drop-link:hover>ul {
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.75s;
+    padding-top: 80px;
+}
+
+#mainnav ul li #third-drop-link:hover>ul {
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.75s;
+    padding-top: 80px;
+}
+
+#mainnav form {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainnav form select,
+#mainnav form select option {
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+
+#mainnav form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid;
+}
+
+#mainnav form select option {
+    margin: 5px;
+    padding: 0;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .nav-items {
+        display: block;
+        float: right;
+    }
+
+    .ham {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
+
+.ham span {
+    display: block;
+    background: #000;
+    width: 32px;
+    height: 4px;
+    border-radius: 1.25px;
+    transition: margin 0.25s 0.25s, transform 0.25s;
+}
+
+.ham .bar1 {
+    margin-bottom: 6px;
+}
+
+.ham .bar3 {
+	margin-top: 6px;
+}
+
+.ham.active span {
+	transition: margin 0.25s, transform 0.25s 0.25s;
+}
+
+.ham.active .bar1 {
+	margin-top: 8px;
+	margin-bottom: -4px;
+	transform: rotate(45deg);
+}
+.ham.active .bar2 {
+	transform: rotate(45deg);
+
+}
+.ham.active .bar3 {
+	margin-top: -4px;
+	transform: rotate(135deg);
+}
+
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 1.875rem;
+	background: #65dff5 url("../images/up-arrow.png") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color: #84edff;
+}
+
+body {
+    color: #A8A8A8;
+    background-color: #151618;
+}
+
+
+/* IE10 + 11 Bugfix - prevents grey background */
+
+hr,
+.borderedbox {
+    border-color: #D7D7D7;
+}
+
+label span {
+    color: #FF0000;
+    background-color: inherit;
+}
+
+input:focus,
+textarea:focus,
+*:required:focus {
+    border-color: #82B7DF;
+}
+
+.overlay {
+    color: #FFFFFF;
+    background-color: inherit;
+}
+
+.overlay::after {
+    color: inherit;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.overlay.dark::after {
+    color: inherit;
+    background-color: rgba(37, 100, 146, .85)/* #256492 */
+    ;
+}
+
+.overlay.light::after {
+    background-color: rgba(130, 183, 223, .65)/* #82B7DF */
+    ;
+}
+
+.btn,
+.btn.inverse:hover {
+    font-family: "인피니티산스 Bold";
+    color: #FFFFFF;
+    background-color: #70B7F3;
+    border-color: #70B7F3;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn.inverse {
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+    cursor: pointer;
+}
+
+.logoname {
+    color: inherit;
+}
+
+.logoname i {
+    color: #256492;
+}
+
+
+/* Rows */
+
+.row0 {
+    color: #474747;
+    background-color: #373737;
+    border-color: rgb(75, 157, 233);
+}
+
+.row1 {
+    color: #474747;
+    background-color: #FFFFFF;
+    border-color: rgb(75, 157, 233);
+    padding: 0.325rem;
+    transition: all 0.25s;
+}
+
+@media (max-width: 768px) {
+    .row1 {
+        color: #474747;
+        background-color: #FFFFFF;
+        border-color: rgb(75, 157, 233);
+        padding: 3.182rem 0;
+        transition: all 0.25s;
+    }
+}
+
+.row2 {
+    color: #A8A8A8;
+    background-color: #1C1D1F;
+    border-color: rgb(75, 157, 233);
+}
+
+.row4 {
+    color: #A8A8A8;
+    background-color: #1C1D1F;
+    border-color: rgb(75, 157, 233);
+}
+
+.row5,
+.row5 a {
+    color: #A8A8A8;
+    background-color: #151618;
+}
+
+.row6 {
+    color: #FFFFFF;
+    background-color: #373737;
+}
+
+/* Header */
+
+#header {
+    z-index: 99999;
+}
+
+#header #logo .logoname a {
+    color: inherit;
+}
+
+#header ul li div i {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+
+/* Page Intro */
+
+#pageintro {
+    color: #FFFFFF;
+}
+
+
+/* Navigation */
+
+#mainnav li a {
+    color: inherit;
+    border-color: transparent;
+}
+
+#mainnav .active a,
+#mainnav a:hover,
+#mainnav li:hover>a {
+    color: #82B7DF;
+    background-color: #FFFFFF;
+    border-color: #82B7DF;
+}
+
+#mainnav li li a,
+#mainnav .active li a {
+    color: #474747;
+    background-color: rgba(255, 255, 255, .8);
+    border-color: #FFFFFF;
+}
+
+#mainnav li li:hover>a,
+#mainnav .active .active>a {
+    color: #82B7DF;
+    background-color: #FFFFFF;
+    border-color: #82B7DF;
+}
+
+#mainnav form select {
+    color: #474747;
+    background-color: #FFFFFF;
+    border-color: #82B7DF;
+}
+
+
+@-ms-viewport {
+    width: device-width;
+}
+
+
+@media (min-width: 1140px) {
+    .hoc {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 978px) and (max-width: 1140px) {
+    .hoc {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 978px) {
+    .hoc {
+        max-width: 90%;
+    }
+
+    #mainnav form {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .fl_left,
+    .fl_right {
+        display: block;
+        float: none;
+    }
+
+    .one_third,
+    .one_quarter,
+    .three_quarter {
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    #pageintro {
+        padding: 150px 0;
+    }
+
+    #pageintro .heading {
+        font-size: 2rem;
+    }
+
+    #about {
+        padding-bottom: 25px;
+    }
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #82B7DF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.projects-title-wrap {
+    width: 85%;
+    border-bottom: 1.5px solid #676767;
+    margin: 0 auto;
+}
+
+.projects-title-sub {
+    font-family: '인피니티산스 Bold';
+    font-size: 1rem;
+    text-align: center;
+    color: #676767;
+}
+
+.projects-title {
+    font-family: '인피니티산스 Bold';
+    font-size: 1.75rem;
+    text-align: center;
+    color: #212121;
+}
+
+.silder-ul,
+.silder-li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.slide {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide ul {
+    width: calc(100% * 4);
+    display: flex;
+    transition: 0.925s;
+    float: left;
+    list-style: none;
+}
+
+.slide li {
+    width: calc(100% / 4);
+    height: 100vh;
+    min-height: 50rem;
+    list-style: none;
+}
+
+.slide li:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)), url('../images/durango-main.png') center center no-repeat;
+    background-size: cover;
+}
+
+.slide li:nth-child(2) {
+    background: #82b7df;
+    background-size: cover;
+    transition: all 0.25s;
+}
+
+.slide li:nth-child(3) {
+    background: rgb(166, 252, 166);
+    background-size: cover;
+    transition: all 0.25s;
+}
+
+.slide li:nth-child(4) {
+    background: rgb(156, 156, 238);
+    background-size: cover;
+    transition: all 0.25s;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 15px;
+    left :0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 3.5px;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+  
+.dialog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fdfdfd;
+	padding: 20px;
+    margin: 0 auto;
+    border: 2.5px solid #515352;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-height: 100vh;
+}
+
+.dialog-header {
+	display: flex;
+    padding: 0 0.5rem 0.75rem 0.5rem;
+    border-bottom: 1.75px solid #717372;
+}
+
+.dialog-title {
+    width: 80%;
+    font-family: "인피니티산스 Bold";
+    font-size: 1.525rem;
+    margin-bottom: 0;
+    color: #212322;
+}
+
+.dialog-text {
+    font-family: "인피니티산스 Bold";
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.51;
+    color: #515352;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.dialog-image-wrap {
+    max-width: 85%;
+    max-height: 85%;
+    margin: 0 auto;
+}
+  
+.dialog-close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+  
+.dialog-close:hover,
+.dialog-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden-scroll {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.projcet-title-wrap {
+    width: 62.5%;
+    height: auto;
+}
+
+@media (max-width: 478px) {
+    .projcet-title-wrap {
+        width: 75%;
+        height: auto;
+    }
+}
+
+.projcet-title {
+    font-family: "인피니티산스 Bold";
+    font-size: 3.5rem;
+    color: white;
+}
+
+.utterances {
+    max-width: 100% !important;
+}
+
+#about {
+    padding: 25px 15px;
+    background-color: #1C1D1F;
+}
+
+.about-text-container {
+    text-align: center;
+}
+
+.about-title {
+    font-family: 'Raleway Bold';
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #dddddd;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.about-title-name {
+    font-family: 'Facon';
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FAFAFA;
+    line-height: 1.51;
+}
+
+.about-icon {
+    display: inline-block;
+    position: relative;
+    min-height: 60px;
+    margin: 0 0 20px 60px;
+    line-height: 1;
+}
+
+.about-icon i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    font-size: 24px;
+    text-align: center;
+    border: 2.5px solid #474747;
+    border-radius: 50%;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin: 0 auto;
+}
+
+.newspeed-text-primary {
+    color: #3399CC;
+}
+
+.newspeed-text-secondary {
+    color: #82b7df;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.newspeed {
+    width: 100%;
+    padding: 25px 20px;
+    transition: all 0.25s ease;
+}
+
+.newspeed-content-container {
+    max-width: 1422px;
+    transition: all 0.25s ease;
+}
+
+.newspeed-text-container {
+    text-align: center;
+}
+
+.newspeed-title {
+    font-family: 'Facon';
+    font-size: 2.5rem;
+    color: #FAFAFA;
+}
+
+.newspeed-item-list {
+    justify-content: space-between;
+    transition: all 0.25s ease;
+}
+
+.newspeed-item-container {
+    overflow: hidden;
+}
+
+.newspeed-item-container img {
+    transition: all 0.3s ease;
+}
+
+.newspeed-item-container:hover img {
+    transform: scale(1.2);
+}
+
+.newspeed-bg-white {
+    background-color: white;
+    border: 1px solid #CDCECF;
+    border-radius: 5px;
+}
+
+.newspeed-bg-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.newspeed-bg-gray {
+    background-color: #F4F4F4;
+}
+
+.newspeed-img-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newspeed-overlay-icon {
+    color: #a7a7a7;
+    opacity: 1;
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8px;
+    z-index: 1002;
+    transition: all 0.3s ease;  
+}
+
+.newspeed-img-overlay:hover {
+    background-color: transparent;
+}
+
+.newspeed-img-overlay:hover .newspeed-overlay-icon {
+    opacity: 0;
+}
+
+.newspeed-catalog-item-description {
+    flex: 1;
+}
+
+.newspeed-item {
+    max-width: 462px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    transition: all 0.25s ease;
+}
+
+@media (max-width: 1468px) {
+    .newspeed-item-list {
+        max-width: 924px;
+        margin: 0 auto;
+    }
+
+    .newspeed-item {
+        max-width: 462px;
+    }
+}
+
+@media (max-width: 991px) {
+    .newspeed-item {
+        max-width: 762px;
+        margin: 0 auto;
+    }
+
+    .newspeed-item {
+        margin-bottom: 30px;
+    }
+}
+
+.newspeed-item-description {
+    flex: 1;
+}
+
+.newspeed-item-title {
+    font-family: '인피니티산스 Bold';
+}
+
+.newspeed-item-text {
+    font-family: '인피니티산스 Bold';
+}
+
+.newspeed-tag {
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+}
+
+.newspeed-tag p {
+    font-family: '인피니티산스 Bold';
+    background-color: #000000;
+    color: #4285f4;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 18%);
+    opacity: 0.75;
+    padding: 0 10px;
+    border-radius: 2px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Kyllox">
+    <meta name="title" content="Kyllox's Homepage">
+    <meta name="subject" content="Kyllox의 홈페이지">
+    <meta name="description" content="Kyllox의 개인 홈페이지입니다.">
+
+    <meta property="og:site_name" content="Kyllox's Homepage" />
+    <meta property="og:site" content="https://kyllox.xyz" />
+    <meta property="og:title" content="Kyllox의 홈페이지" />
+    <meta property="og:description" content="Kyllox의 개인 홈페이지입니다." />
+    <meta property="og:image" content="https://kyllox.xyz/images/favicon.png">
+    <meta property="og:image:alt" content="Main-Image">
+    <meta property="og:url" content="https://kyllox.xyz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <meta name="robots" content="index, follow">
+    <meta name="naver-site-verification" content="ad63ca1166169a6e1789d0632b37637d7890eea3" />
+
+    <link rel="canonical" href="https://kyllox.xyz">
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <script data-ad-client="ca-pub-6698934439909858" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script>
+        var lang;
+        var domain;
+
+        if (navigator.language != null) {
+            lang = navigator.language;
+            lang = lang.toLowerCase().substring(0, 2);
+        }
+        else {
+            lang = "undefined";
+        }
+
+        if (location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
+            domain = "";
+        }
+        else {
+            domain = ".html";
+        }
+
+        if (lang == "ko") {
+            location.replace("ko/main" + domain);
+        }
+        else if (lang == "en") {
+            location.replace("en/main" + domain);
+        }
+        else {
+            location.replace("en/main" + domain);
+        }
+    </script>
+</head>
+
+</html>
