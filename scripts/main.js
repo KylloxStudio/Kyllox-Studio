@@ -130,7 +130,7 @@
             $('.dialog').fadeOut();
         }, 400);
         scrollAble();
-        $("iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        $("iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
     });
 
     $('.dialog').click(function() {
@@ -139,7 +139,7 @@
             $('.dialog').fadeOut();
         }, 400);
         scrollAble();
-        $("iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        $("iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
     });
 
     $('#show-durango-dialog').click(function() {
