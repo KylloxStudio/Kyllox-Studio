@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../styles/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="../styles/layout.css">
     <link rel="stylesheet" href="../styles/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body id="top">
@@ -187,7 +188,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
                             <div class="position-relative newspeed-item-container">
                                 <img src="../images/durango-combat.png" alt="Image" class="img-fluid newspeed-item-img">
-                                <a rel="noopener noreferrer" target="_blank" href="https://youtu.be/AmcfeOfof9I" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
+                                <a id="show-video-dialog-01" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
                                 <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
                             </div>    
                             <div class="p-4 newspeed-bg-gray newspeed-item-description">
@@ -198,7 +199,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
                             <div class="position-relative newspeed-item-container">
                                 <img src="../images/durango-pet.png" alt="Image" class="img-fluid newspeed-item-img">    
-                                <a rel="noopener noreferrer" target="_blank" href="https://youtu.be/CSvuAAiteUE" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
+                                <a id="show-video-dialog-02" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
                                 <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
                             </div>
                             <div class="p-4 newspeed-bg-gray newspeed-item-description">
@@ -209,7 +210,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
                             <div class="position-relative newspeed-item-container">
                                 <img src="../images/durango-airballoon.png" alt="Image" class="img-fluid newspeed-item-img">    
-                                <a rel="noopener noreferrer" target="_blank" href="https://youtu.be/w5UM0QsU1vQ" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
+                                <a id="show-video-dialog-03" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
                                 <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
                             </div>                            
                             <div class="p-4 newspeed-bg-gray newspeed-item-description">
@@ -219,6 +220,43 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="video-dialog-01" class="dialog">
+        <div id="video-dialog-01-content" class="dialog-content">
+            <span class="dialog-close">&times;</span>
+            <div class="dialog-header">
+                <h5 class="dialog-title"><b>Video Viewer</b></h5>
+            </div>
+            <div class="video-viewer-wrap">
+                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/AmcfeOfof9I?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-dialog-02" class="dialog">
+        <div id="video-dialog-02-content" class="dialog-content">
+            <span class="dialog-close">&times;</span>
+            <div class="dialog-header">
+                <h5 class="dialog-title"><b>Video Viewer</b></h5>
+            </div>
+            <div class="video-viewer-wrap">
+                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/CSvuAAiteUE?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-dialog-03" class="dialog">
+        <div id="video-dialog-03-content" class="dialog-content">
+            <span class="dialog-close">&times;</span>
+            <div class="dialog-header">
+                <h5 class="dialog-title"><b>Video Viewer</b></h5>
+            </div>
+            <div class="video-viewer-wrap">
+                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/w5UM0QsU1vQ?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -297,7 +335,7 @@
 
     <div id="durango-dialog" class="dialog">
         <div id="durango-dialog-content" class="dialog-content">
-            <span id="durango-dialog-close" class="dialog-close">&times;</span>
+            <span class="dialog-close">&times;</span>
             <div class="dialog-header">
                 <h5 class="dialog-title"><b>Kyllox's Durango Studio</b></h5>
             </div>
