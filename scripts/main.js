@@ -125,7 +125,9 @@
     });
 
     $('.dialog-close').click(function() {
-        $('.dialog-content').slideUp();
+        window.setTimeout(function() {
+            $('.dialog-content').slideUp();
+        }, 125);
         window.setTimeout(function() {
             $('.dialog').fadeOut();
         }, 400);
@@ -136,7 +138,9 @@
     });
 
     $('.dialog').click(function() {
-        $('.dialog-content').slideUp();
+        window.setTimeout(function() {
+            $('.dialog-content').slideUp();
+        }, 125);
         window.setTimeout(function() {
             $('.dialog').fadeOut();
         }, 400);
