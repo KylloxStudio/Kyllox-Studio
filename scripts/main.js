@@ -3,7 +3,7 @@
 	
 	$(function() {
         $(document).ready(function() {
-            if (location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
+            if (locathion.href.indexOf(".studio") > -1 || location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
                 if (location.href.indexOf(".html") > -1) {
                     location.replace(location.href.substring(0, location.href.length - 5));
                 }
@@ -350,7 +350,7 @@ const replaceLocalPage = function(path, page) {
         pageUrl = location.href.substring(0, location.href.length - splitUrl[splitUrl.length - 1].length) + path;
     }
 
-    if (location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
+    if (location.href.indexOf(".studio") > -1 || location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
         location.assign(pageUrl + page.substring(0, page.length - 5));
     }
     else {
