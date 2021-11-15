@@ -394,6 +394,15 @@ a {
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
 
+@media (min-width: 578px) {
+    #contact {
+        height: 100vh;
+    }
+
+    .contact-content {
+        padding-top: 1.75rem;
+    }
+}
 
 #contact .mail-link {
     display: inline-block;
@@ -542,6 +551,10 @@ a {
     font-size: 1.5rem;
     color: #FFFFFF;
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+#develoment-explanation li::marker {
+    color: #FAFAFA;
 }
 
 .develoment-text {
