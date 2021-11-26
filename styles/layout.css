@@ -937,6 +937,7 @@ textarea:focus,
 .btn,
 .btn.inverse:hover {
     font-family: "인피니티산스 Bold";
+    font-size: 1.05rem;
     color: #FFFFFF;
     background-color: #70B7F3;
     border-color: #70B7F3;
