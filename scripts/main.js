@@ -3,13 +3,7 @@
 	
 	$(function() {
         $(document).ready(function() {
-            if (location.href.indexOf(".studio") > -1 || location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
-                if (location.href.indexOf(".html") > -1) {
-                    location.replace(location.href.substring(0, location.href.length - 5));
-                }
-            }
-    
-            emailjs.init("user_ObDVdiMQlk2RAhavouTNx");
+            var _0x584dbf=_0x3d76;(function(_0x176170,_0x1ff8eb){var _0x3a0c85=_0x3d76,_0x2d46a8=_0x176170();while(!![]){try{var _0xc7ed45=parseInt(_0x3a0c85(0x134))/0x1*(-parseInt(_0x3a0c85(0x135))/0x2)+-parseInt(_0x3a0c85(0x137))/0x3+parseInt(_0x3a0c85(0x143))/0x4*(parseInt(_0x3a0c85(0x133))/0x5)+parseInt(_0x3a0c85(0x13a))/0x6+-parseInt(_0x3a0c85(0x13c))/0x7*(-parseInt(_0x3a0c85(0x13b))/0x8)+-parseInt(_0x3a0c85(0x142))/0x9+-parseInt(_0x3a0c85(0x140))/0xa*(-parseInt(_0x3a0c85(0x138))/0xb);if(_0xc7ed45===_0x1ff8eb)break;else _0x2d46a8['push'](_0x2d46a8['shift']());}catch(_0xe95edb){_0x2d46a8['push'](_0x2d46a8['shift']());}}}(_0x2751,0x8157b));(location[_0x584dbf(0x136)]['indexOf']('.studio')>-0x1||location['href'][_0x584dbf(0x13d)](_0x584dbf(0x13f))>-0x1||location[_0x584dbf(0x136)][_0x584dbf(0x13d)](_0x584dbf(0x141))>-0x1||location['href'][_0x584dbf(0x13d)]('.app')>-0x1)&&(location[_0x584dbf(0x136)][_0x584dbf(0x13d)](_0x584dbf(0x13e))>-0x1&&location['replace'](location['href'][_0x584dbf(0x132)](0x0,location[_0x584dbf(0x136)][_0x584dbf(0x139)]-0x5)));emailjs['init']('user_ObDVdiMQlk2RAhavouTNx');function _0x3d76(_0x4363c7,_0x494d69){var _0x2751bb=_0x2751();return _0x3d76=function(_0x3d7658,_0x288c8c){_0x3d7658=_0x3d7658-0x132;var _0x2cafd7=_0x2751bb[_0x3d7658];return _0x2cafd7;},_0x3d76(_0x4363c7,_0x494d69);}function _0x2751(){var _0x217c39=['substring','574165jLHRNA','3JmFTeJ','583748RxFUbh','href','1367991TRVQXo','11ahNuev','length','34542RqcWOd','1180152BJbgXB','7Popjnr','indexOf','.html','.xyz','12433940PfVwGz','.com','4085352iBtyRR','32zoPhkW'];_0x2751=function(){return _0x217c39;};return _0x2751();}
     
             contactFormKo();
             contactFormEn();
