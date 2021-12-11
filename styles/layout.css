@@ -356,19 +356,9 @@ a {
 
 .main-text-container {
     position: absolute;
-    top: 35%;
-	left: 5%;
+    top: 32.5%;
+	left: 7.5%;
     text-align: left;
-}
-
-@media (max-width: 768px) { 
-    .main-text-container {
-        position: absolute;
-        top: 25%;
-        left: 5%;
-        transform: translate(0, -25%);
-        text-align: left;
-    }
 }
 
 .main-title {
@@ -925,13 +915,11 @@ textarea:focus,
 
 .overlay.dark::after {
     color: inherit;
-    background-color: rgba(37, 100, 146, .85)/* #256492 */
-    ;
+    background-color: rgba(37, 100, 146, .85); /* #256492 */
 }
 
 .overlay.light::after {
-    background-color: rgba(130, 183, 223, .65)/* #82B7DF */
-    ;
+    background-color: rgba(130, 183, 223, .65); /* #82B7DF */
 }
 
 .btn,
