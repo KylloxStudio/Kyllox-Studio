@@ -1,5 +1,8 @@
 (function($) {
     "use strict"; 
+
+    const page = $('html, body');
+    let pageView = 1;
 	
 	$(function() {
         $(document).ready(function() {
@@ -11,11 +14,35 @@
 
 		$(document).on('click', 'a.page-scroll', function(event) {
 			var $anchor = $(this);
-			$('html, body').stop().animate({
+			page.stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 750, 'easeInOutExpo');
 			event.preventDefault();
 		});
+
+        window.addEventListener("scroll touchmove mousewheel", function(e) {
+            e.preventDefault();
+        }, {passive : false});
+
+        page.animate({
+            scrollTop : 0
+        }, 10);
+
+        $(window).on("scroll touchmove mousewheel", function(e) {
+            if (page.is(":animated"))
+                return;
+            if (e.originalEvent.deltaY > 0) {
+                if (pageView == 4) return;
+                pageView++;
+            } else if (e.originalEvent.deltaY < 0) {
+                if (pageView == 1) return;
+                pageView--;
+            }
+            var posTop = (pageView - 1) * $(window).height();
+            page.animate({
+				scrollTop: posTop
+			}, 750, 'easeInOutExpo');
+        });
 	});
 
 	$('body').prepend('<a href="#top" class="back-to-top page-scroll"></a>');
@@ -28,9 +55,13 @@
         }
     });
 
+    $('a.back-to-top').click(function() {
+        pageView = 1;
+    });
+
     $('#logo-text').click(function() {
         reloadPage();
-    })
+    });
 
     $('#nav-pages').hover(function() {
         $('#second-drop-link').hide();
