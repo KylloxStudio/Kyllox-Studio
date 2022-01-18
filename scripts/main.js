@@ -3,6 +3,7 @@
 
     const page = $('html, body');
     let pageView = 1;
+    let posTop;
 	
 	$(function() {
         $(document).ready(function() {
@@ -20,25 +21,34 @@
 			event.preventDefault();
 		});
 
-        page.animate({
-            scrollTop : 0
-        }, 10);
+        if (!jQuery.browser.mobile) {
+            $('html').css({'overflow': 'hidden'});
+            $('body').css({'display': 'block', 'width': '100%', 'height': '100%', 'margin': '0'});
+            
+            window.addEventListener("mousewheel", function(e){
+                e.preventDefault();
+            }, {passive : false});
 
-        $(window).on("scroll touchmove mousewheel", function(e) {
-            if (page.is(":animated"))
-                return;
-            if (e.originalEvent.deltaY > 0) {
-                if (pageView == 4) return;
-                pageView++;
-            } else if (e.originalEvent.deltaY < 0) {
-                if (pageView == 1) return;
-                pageView--;
-            }
-            var posTop = (pageView - 1) * $(window).height();
             page.animate({
-				scrollTop: posTop
-			}, 750, 'easeInOutExpo');
-        });
+                scrollTop : 0
+            }, 10);
+
+            $(window).on("mousewheel", function(e) {
+                if (page.is(":animated"))
+                    return;
+                if (e.originalEvent.deltaY > 0) {
+                    if (pageView == 4) return;
+                    pageView++;
+                } else if (e.originalEvent.deltaY < 0) {
+                    if (pageView == 1) return;
+                    pageView--;
+                }
+                posTop = (pageView - 1) * $(window).height();
+                page.animate({
+                    scrollTop: posTop
+                }, 750, 'easeInOutExpo');
+            });
+        }
 	});
 
 	$('body').prepend('<a href="#top" class="back-to-top page-scroll"></a>');
@@ -53,6 +63,18 @@
 
     $('a.back-to-top').click(function() {
         pageView = 1;
+    });
+
+    $('.header-link').click(function() {
+        pageView = 1;
+    });
+
+    $('.projects-link').click(function() {
+        pageView = 2;
+    });
+
+    $('.contact-link').click(function() {
+        pageView = 3;
     });
 
     $('#logo-text').click(function() {

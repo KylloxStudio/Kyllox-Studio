@@ -74,18 +74,6 @@ www.rosariodesign.com
 }
 
 
-html {
-    overflow: hidden;
-}
-
-html, body {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 
@@ -271,6 +259,10 @@ a {
 }
 
 .slide-item:hover {
+    color: #82b7df;
+}
+
+.slide-item.active {
     color: #82b7df;
 }
 
@@ -1065,8 +1057,13 @@ textarea:focus,
     border-color: #FFFFFF;
 }
 
-#mainnav li li:hover>a,
-#mainnav .active .active>a {
+#mainnav li li:hover>a {
+    color: #82B7DF;
+    background-color: #FFFFFF;
+    border-color: #82B7DF;
+}
+
+#mainnav .active {
     color: #82B7DF;
     background-color: #FFFFFF;
     border-color: #82B7DF;
@@ -1255,8 +1252,8 @@ textarea:focus,
     background-color: #fdfdfd;
 	padding: 20px;
     margin: 0 auto;
-    border: 2.5px solid #515352;
-    border-radius: 0.5rem;
+    border: 2.5px solid #373737;
+    border-radius: 2.5px;
     width: 85%;
     max-height: 90%;
 }
