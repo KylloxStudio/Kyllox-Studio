@@ -20,10 +20,6 @@
 			event.preventDefault();
 		});
 
-        window.addEventListener("scroll touchmove mousewheel", function(e) {
-            e.preventDefault();
-        }, {passive : false});
-
         page.animate({
             scrollTop : 0
         }, 10);
