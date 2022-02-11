@@ -793,6 +793,7 @@ footer #donate-ko span {
 footer #donate-ko span:before {
     font-family: 'Font Awesome 6 Free';
     content: "\f7b6";
+    font-weight: 900;
     padding-right: 2px;
 }
 
@@ -828,6 +829,7 @@ footer #donate-en span {
 footer #donate-en span:before {
     font-family: 'Font Awesome 6 Free';
     content: "\f7b6";
+    font-weight: 900;
     padding-right: 2px;
 }
 
