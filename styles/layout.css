@@ -819,13 +819,6 @@ footer #donate-en span {
     padding: 0 2px;
 }
 
-.coffie-icon:before {
-    font-family: 'Font Awesome 6 Free';
-    content: "\f7b6";
-    font-weight: 900;
-    padding-right: 2px;
-}
-
 @media (max-width: 768px) {
     #copyright .text {
         margin: 0;
