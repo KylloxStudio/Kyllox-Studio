@@ -774,7 +774,7 @@ footer #donate-ko {
     transition: all 0.2s ease-in-out;
     position: relative;
     top: 40px;
-    left: 150px;
+    left: 140px;
     float: right;
 }
 
@@ -804,7 +804,7 @@ footer #donate-en {
     transition: all 0.2s ease-in-out;
     position: relative;
     top: 40px;
-    left: 150px;
+    left: 140px;
     float: right;
 }
 
@@ -817,11 +817,6 @@ footer #donate-en span {
     font-family: 'Poppins Medium';
     color: #121212;
     padding: 0 2px;
-}
-
-footer .coffie-icon {
-    font-family: 'Font Awesome 6 Free' !important;
-    color: #121212 !important;
 }
 
 @media (max-width: 768px) {
