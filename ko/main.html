@@ -30,18 +30,17 @@
     <link rel="stylesheet" href="../styles/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="../styles/layout.css">
     <link rel="stylesheet" href="../styles/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../styles/magnific-popup.css">
 </head>
 
 <body id="top">
-    <header id="header" class="wrapper row1">
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+    <header id="header" class="fixed-top">
         <div class="hoc clear">
-            <div class="header-logo-container">
-                <ul id="logo-text">
-                    <p class="header-logo-text">Kyllox</p><br>
-                    <p class="header-text">Front-End Developer</p>
-                </ul>
-            </div>
+            <h1 class="logo"><a onclick="reloadPage();">Kyllox</a></h1>
 
             <nav id="mainnav">
                 <div class="ham">
@@ -49,59 +48,53 @@
                     <span class="bar2"></span>
                     <span class="bar3"></span>
                 </div>
-
+        
                 <ul class="nav-items clear">
-                    <li><a class="header-link nav-link active page-scroll" href="#header">Home</a></li>
-                    <!-- <li><a class="nav-link page-scroll" href="#about">About</a></li> -->
-                    <li><a class="projects-link nav-link page-scroll" href="#projects">Projects</a></li>
-                    <!-- <li><a class="nav-link page-scroll" href="#newspeed">Newspeed</a></li> -->
-                    <li><a class="contact-link nav-link page-scroll" href="#contact">Contact</a></li>
-                    <li><a id="nav-pages" class="nav-link drop">Pages</a>
-                        <ul>
+                    <li><a class="nav-link active page-scroll" href="#top">Intro</a></li>
+                    <li><a class="nav-link page-scroll" href="#about">About</a></li>
+                    <li><a class="nav-link page-scroll" href="#projects">Projects</a></li>
+                    <li><a class="nav-link page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="nav-link drop">Pages</a>
+                        <ul class="drop-menu">
                             <li><a href="https://blog.kyllox.studio">BLOG</a></li>
-                            <li><a id="second-drop-link" href="https://durango.kyllox.studio">Durango Studio</a></li>
+                            <li><a href="https://durango.kyllox.studio">Durango Studio</a></li>
                         </ul>
                     </li>
-                    <li><a id="nav-language" class="nav-link drop">Language</a>
-                        <ul>
+                    <li>
+                        <a class="nav-link drop">Language</a>
+                        <ul class="drop-menu">
                             <li><a onclick="reloadPage();">Korean</a></li>
-                            <li><a id="second-drop-link2" onclick="replaceLocalPage('../en/', 'main.html');">English</a></li>
+                            <li><a onclick="replaceLocalPage('../en/', 'main.html');">English</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-
+        
             <nav id="slide-menu" class="slide-menu-container">
                 <ul class="slide-menu">
                     <li class="slide-item">
                         <div class="slide-go-arrow">
-                            <a class="header-link fa fa-angle-right page-scroll" href="#header"></a>
+                            <a class="fa fa-angle-right page-scroll" href="#top"></a>
                         </div>
-                        <a class="header-link slide-link active page-scroll" href="#header">HOME</a>
+                        <a class="slide-link active page-scroll" href="#top">INTRO</a>
                     </li>
-                    <!-- <li class="slide-item">
+                    <li class="slide-item">
                         <div class="slide-go-arrow">
                             <a class="fa fa-angle-right page-scroll" href="#about"></a>
                         </div>
                         <a class="slide-link page-scroll" href="#about">ABOUT</a>
-                    </li> -->
-                    <li class="slide-item">
-                        <div class="slide-go-arrow">
-                            <a class="projects-link fa fa-angle-right page-scroll" href="#projects"></a>
-                        </div>
-                        <a class="projects-link slide-link page-scroll" href="#projects">PROJECTS</a>
                     </li>
-                    <!-- <li class="slide-item">
-                        <div class="slide-go-arrow">
-                            <a class="fa fa-angle-right page-scroll" href="#newspeed"></a>
-                        </div>
-                        <a class="slide-link page-scroll" href="#newspeed">NEWSPEED</a>
-                    </li> -->
                     <li class="slide-item">
                         <div class="slide-go-arrow">
-                            <a class="contact-link fa fa-angle-right page-scroll" href="#contact"></a>
+                            <a class="fa fa-angle-right page-scroll" href="#projects"></a>
                         </div>
-                        <a class="contact-link slide-link page-scroll" href="#contact">CONTACT</a>
+                        <a class="slide-link page-scroll" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="slide-item">
+                        <div class="slide-go-arrow">
+                            <a class="fa fa-angle-right page-scroll" href="#contact"></a>
+                        </div>
+                        <a class="slide-link page-scroll" href="#contact">CONTACT</a>
                     </li>
                     <li class="slide-item">
                         <div class="slide-drop-arrow">
@@ -134,227 +127,317 @@
         </div>
     </header>
 
+    <section id="intro" class="wrapper">
+        <div class="intro-overlay"></div>
 
-    <div id="main" class="wrapper row0">
-        <div class="image-container">
-            <div class="main-image"></div>
-        </div>
-        <div class="main-text-container">
-            <h1 class="main-title">Front-End Developer</h1>
-            <p class="main-text">Web Front-End<br>C, C++ Develop<br>C# Develop</p>
-        </div>
-    </div>
-
-
-    <!-- <div id="about" class="wrapper row0">
-        <div class="about-text-container">
-            <h1 class="about-title">Front-End Developer</h1>
-            <h2 class="about-title-name">Kyllox</h2>
-        </div>
-        <div class="about-icon">
-            <i class="fas fa-desktop"></i>
-        </div>
-    </div> -->
-
-
-    <div id="projects" class="slide row4">
-        <ul class="slider-ul swiper-wrapper">
-            <li class="slider-li swiper-slide">
-                <div id="pageintro" class="hoc clear">
-                    <h3 class="projcet-title">Kyllox's<br>Durango Studio</h3>
-                    <div>
-                        <a class="btn" rel="noopener noreferrer" target="_blank" href="https://durango.kyllox.studio">웹사이트 방문</a>
-                            <a id="show-durango-dialog" class="btn inverse">설명 보기</a>
-                    </div>
-                </div>
-            </li>
-            <li class="slider-li swiper-slide"></li>
-            <li class="slider-li swiper-slide"></li>
-            <li class="slider-li swiper-slide"></li>
-        </ul>
-        <div class="pagination swiper-pagination"></div>
-    </div>
-
-
-    <!-- <div id="newspeed" class="newspeed row2">
-        <div class="clear">
-            <div class="newspeed-text-container">
-                <h1 class="clear"><span class="newspeed-title">NEWSPEED</span></h1>
+        <div class="intro-content">
+            <div class="row">
+                <h5>Hello, World!</h5>
+                <h1>I am Kyllox.</h1>
+                
+                <p class="intro-position">
+                    <span>Front-End / Game Developer</span>
+                </p>
+                
+                <a class="button stroke page-scroll" href="#about">More About Me</a>
             </div>
+        </div>
 
-            <div class="container-fluid">
-                <div class="mx-auto newspeed-content-container">
-                    <div class="row newspeed-item-list">
-                        <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
-                            <div class="position-relative newspeed-item-container">
-                                <img src="../images/durango-combat.png" alt="Image" class="img-fluid newspeed-item-img">
-                                <a id="show-video-dialog-01" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
-                                <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
-                            </div>    
-                            <div class="p-4 newspeed-bg-gray newspeed-item-description">
-                                <h3 class="newspeed-text-primary mb-3 newspeed-item-title">전투 시스템 + 펀치머신 구현</h3>
-                                <p class="newspeed-item-text">전투 시스템과 펀치머신을 구현하였습니다. <span class="newspeed-text-secondary">워프 유적에서 야생동물을 소환해 전투를 할 수 있습니다.</span> 위 영상에서 기능을 확인하실 수 있습니다.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
-                            <div class="position-relative newspeed-item-container">
-                                <img src="../images/durango-pet.png" alt="Image" class="img-fluid newspeed-item-img">    
-                                <a id="show-video-dialog-02" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
-                                <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
-                            </div>
-                            <div class="p-4 newspeed-bg-gray newspeed-item-description">
-                                <h3 class="newspeed-text-primary mb-3 newspeed-item-title">펫 기능 구현</h3>
-                                <p class="newspeed-item-text">펫 기능을 구현하였습니다. <span class="newspeed-text-secondary">워프 유적에서 길들인 동물을 받을 수 있으며, 탑승, 가방 등의 기능을 사용할 수 있습니다.</span> 위 영상에서 기능을 확인하실 수 있습니다.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 newspeed-item">
-                            <div class="position-relative newspeed-item-container">
-                                <img src="../images/durango-airballoon.png" alt="Image" class="img-fluid newspeed-item-img">    
-                                <a id="show-video-dialog-03" class="position-absolute newspeed-img-overlay"><i class="fas fa-play newspeed-overlay-icon"></i></a>
-                                <span class="position-absolute newspeed-tag"><p>듀랑고</p></span>
-                            </div>                            
-                            <div class="p-4 newspeed-bg-gray newspeed-item-description">
-                                <h3 class="newspeed-text-primary mb-3 newspeed-item-title">건물 상호작용 추가</h3>
-                                <p class="newspeed-item-text">일부 건물의 상호작용을 추가했습니다. <span class="newspeed-text-secondary">열기구, 상자 등을 사용할 수 있으며,</span> 위 영상에서 기능을 확인하실 수 있습니다.</p>
-                            </div>
-                        </div>
-                    </div>
+        <ul class="intro-social">
+            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/KylloxStudio"><i class="fab fa-github"></i></a></li> 
+            <li><a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCd2bfrmZWJ52sQjFDGZKeXQ"><i class="fab fa-youtube"></i></a></li>
+            <li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/KylloxStudio"><i class="fab fa-twitter"></i></a></li>
+         </ul> 
+    </section>
+
+
+    <section id="about">
+        <div class="row section-intro">
+            <div class="col-twelve">
+                <h5>About</h5>
+                <h1>Let me introduce myself.</h1>
+
+                <div class="intro-info">
+                    <img src="../images/profile.png" alt="Profile Picture">
+                    <p class="lead">저는 학생 개발자이며, 웹 프론트엔드와 유니티 게임을 개발하고 있습니다. 또한, 현재 Python과 웹 백엔드를 익히고 있습니다. 현재 진행 중인 프로젝트는 Durango_V2입니다. <a rel="noopener noreferrer" target="_blank" href="https://github.com/KylloxStudio/Durango_V2">(https://github.com/KylloxStudio/Durango_V2)</a></p>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div id="video-dialog-01" class="dialog">
-        <div id="video-dialog-01-content" class="dialog-content">
-            <span class="dialog-close">&times;</span>
-            <div class="dialog-header">
-                <h5 class="dialog-title"><b>Video Viewer</b></h5>
-            </div>
-            <div class="video-viewer-wrap">
-                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/AmcfeOfof9I?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <div id="video-dialog-02" class="dialog">
-        <div id="video-dialog-02-content" class="dialog-content">
-            <span class="dialog-close">&times;</span>
-            <div class="dialog-header">
-                <h5 class="dialog-title"><b>Video Viewer</b></h5>
-            </div>
-            <div class="video-viewer-wrap">
-                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/CSvuAAiteUE?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <div id="video-dialog-03" class="dialog">
-        <div id="video-dialog-03-content" class="dialog-content">
-            <span class="dialog-close">&times;</span>
-            <div class="dialog-header">
-                <h5 class="dialog-title"><b>Video Viewer</b></h5>
-            </div>
-            <div class="video-viewer-wrap">
-                <iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/w5UM0QsU1vQ?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div> -->
-
-
-    <div id="contact" class="wrapper row4">
-        <div class="contact-content hoc clear">
-            <h1 class="logoname clear"><span class="contact-title">Contact</span></h1>
-            <div class="contact-wrap">
-                <h2 class="clear"><span class="develoment-title">다음 기술들을 다룰 수 있습니다.</span></h2>
-                <ul id="develoment-explanation">
-                    <li><p class="develoment-text">웹 프론트엔드 (HTML, CSS, JS)</p></li>
-                    <li><p class="develoment-text">C, C++</p></li>
-                    <li><p class="develoment-text">C# (.NET)</p></li>
+        
+        <div class="row about-content">
+            <div class="col-six tab-full">
+                <h3>Profile</h3>
+                <ul class="info-list">
+                    <li>
+                        <strong>FullName:</strong>
+                        <span>Jung Ji Min</span>
+                    </li>
+                    <li>
+                        <strong>NickName:</strong>
+                        <span>Kyllox</span>
+                    </li>
+                    <li>
+                        <strong>Job:</strong>
+                        <span>Student, Developer</span>
+                    </li>
+                    <li>
+                        <strong>WebSite:</strong>
+                        <span>kyllox.studio</span>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span>kyllox4804@gmail.com</span>
+                    </li>
                 </ul>
-                <div class="mail-link">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:kyllox4804@gmail.com"><span>Kyllox4804@gmail.com</span></a>
-                </div>
-                <div class="hexagon-wrap">
-                    <span class="fa-stack">
-                        <a rel="noopener noreferrer" target="_blank" href="https://github.com/KylloxStudio">
-                            <span class="hexagon"></span>
-                            <i class="fab fa-github fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCd2bfrmZWJ52sQjFDGZKeXQ">
-                            <span class="hexagon"></span>
-                            <i class="fab fa-youtube fa-stack-1x"></i>
-                        </a>
-                    </span>
+            </div>
+        
+            <div class="col-six tab-full">
+                <h3>Skills</h3>
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent90"><span>90%</span></div>
+                        <strong>Front-End</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent95"><span>95%</span></div>
+                        <strong>C#</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent65"><span>65%</span></div>
+                        <strong>C++</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent55"><span>55%</span></div>
+                        <strong>Python</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent40"><span>40%</span></div>
+                        <strong>Back-End</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row button-section">
+            <div class="col-twelve">
+                <a href="#contact" class="button stroke page-scroll">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+		<div class="row section-intro">
+            <div class="col-twelve">
+                <h5>Projects</h5>
+                <h1>Check Out Some of My Works.</h1>
+            </div>
+        </div>
+
+        <div class="row projects-content">
+            <div class="col-twelve">
+                <div id="projects-wrapper" class="block-1-2 block-mob-full stack">
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/durango-studio.jpg" alt="DurangoStudio">
+                            <a href="#modal-01" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">Durango Studio</h3>
+                                        <span class="projects-types">Web Front-End</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/durango-airballoon.png" alt="DurangoAirballoon">
+                            <a href="#modal-02" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">Durango_V2</h3>
+                                        <span class="projects-types">Unity C#</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/durango-pet.png" alt="DurangoPet">
+                            <a href="#modal-02" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">Durango_V2</h3>
+                                        <span class="projects-types">Unity C#</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/durango-combat.png" alt="DurangoCombat">
+                            <a href="#modal-02" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">Durango_V2</h3>
+                                        <span class="projects-types">Unity C#</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/what-studio.png" alt="WhatStudio">
+                            <a href="#modal-03" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">What Studio</h3>
+                                        <span class="projects-types">Web Front-End</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid projects-item">
+                        <div class="item-wrap">
+                            <img src="../images/durango-sailing.jpg" alt="DurangoSailing">
+                            <a href="#modal-02" class="overlay">
+                                <div class="projects-item-table">
+                                    <div class="projects-item-cell">
+                                        <h3 class="projects-title">Durango_V2</h3>
+                                        <span class="projects-types">Unity C#</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+	                <div id="modal-01" class="popup-modal slider mfp-hide">
+				     	<div class="media">
+				     		<img src="../images/durango-main.png" alt="">
+				     	</div>
+
+					    <div class="description-box">
+					        <h4>Durango Studio</h4>
+					        <p>Kyllox의 듀랑고 실험실입니다. 듀랑고 관련 개발 소식, 결과 등이 올라옵니다.</p>
+					        <div class="categories">Web Development</div>
+					    </div>
+
+			            <div class="link-box">
+			                <a href="https://durango.kyllox.studio" class="popup-modal-visit">Visit WebSite</a>
+					        <a href="#" class="popup-modal-dismiss">Close</a>
+			            </div>
+				    </div>
+
+                    <div id="modal-02" class="popup-modal slider mfp-hide">
+                        <div class="media">
+                            <img src="../images/durango-project.jpg" alt="">
+                        </div>
+
+                       <div class="description-box">
+                           <h4>Durango_V2</h4>
+                           <p>Kyllox의 새로운 듀랑고입니다. 듀랑고를 싱글플레이로 즐길 수 있도록 제작 중입니다.</p>
+                           <div class="categories">Game Development</div>
+                       </div>
+
+                       <div class="link-box">
+                           <a href="https://github.com/KylloxStudio/Durango_V2" class="popup-modal-visit">Visit Project</a>
+                           <a href="#" class="popup-modal-dismiss">Close</a>
+                       </div>
+                   </div>
+
+                   <div id="modal-03" class="popup-modal slider mfp-hide">
+                    <div class="media">
+                        <img src="../images/what-studio.png" alt="">
+                    </div>
+
+                   <div class="description-box">
+                       <h4>What! Studio</h4>
+                       <p>현재 해체된 What! Studio의 홈페이지를 복원한 웹사이트입니다. 왓 스튜디오의 이전 NDC를 감상할 수 있습니다.</p>
+                       <div class="categories">Game Development</div>
+                   </div>
+
+                   <div class="link-box">
+                       <a href="https://what.kyllox.studio" class="popup-modal-visit">Visit WebSite</a>
+                       <a href="#" class="popup-modal-dismiss">Close</a>
+                   </div>
+               </div>
                 </div>
             </div>
-            <form method="POST" id="contact-form-ko" name="contact-form-ko" class="contact-form">
-                <div class="contact-wrapper">
-                    <div class="form-group">
-                        <label class="label" for="name-ko">Full Name</label>
-                        <input type="text" name="name-ko" class="form-control" placeholder="이름을 입력해주세요" required>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="row contact-content">
+            <div class="col-twelve">
+                <h5>Contact</h5>
+                <h1>I'd Love To Hear From You.</h1>
+                <form method="POST" id="contact-form-ko" name="contact-form-ko" class="contact-form">
+                    <div class="form-field">
+                        <input type="text" name="name-ko" class="form-control" placeholder="Name" required>
                     </div>
-                </div>
-                <div class="contact-wrapper-02">
-                    <div class="form-group">
-                        <label class="label" for="email-ko">Email Address</label>
-                        <input type="text" name="email-ko" class="form-control" placeholder="이메일 주소를 입력해주세요" required>
+                    <div class="form-field">
+                        <input type="text" name="title-ko" class="form-control" placeholder="Title" required>
                     </div>
-                </div>
-                <div class="contact-wrapper-02">
-                    <div class="form-group">
-                        <label class="label" for="#">Message</label>
-                        <textarea name="message-ko" cols="30" rows="7" class="form-control" placeholder="내용을 입력해주세요" required></textarea>
+                    <div class="form-field">
+                        <input type="text" name="email-ko" class="form-control" placeholder="Email" required>
                     </div>
-                </div>
-                <div class="contact-wrapper-02">
-                    <div class="form-group">
+                    <div class="form-field">
+                        <textarea name="message-ko" class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-field">
                         <div class="g-recaptcha" data-sitekey="6LePCCMcAAAAAE0F2XW3lp0H0LuFjRlE-UXlZkcu"></div>
                         <div id="error-label"></div>
                     </div>
-                </div>
-                <div class="contact-wrapper-02">
-                    <div class="form-group">
-                        <input type="submit" name="submit" class="submit" value="메일 보내기"/>
+                    <div class="form-field">
+                        <input type="submit" name="submit" class="submit" value="Submit"/>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 
 
-    <footer class="wrapper row5">
-        <div id="copyright" class="hoc clear">
-            <p class="fl_left text">Kyllox &copy; 2021. All Rights Reserved.</p>
+    <footer id="copyright">
+        <div class="row">
+            <div class="col-six tab-full">
+                <p class="fl_left text">Kyllox &copy; 2021. All Rights Reserved.</p>
+            </div>
+            <div class="col-six tab-full pull-right social">
+                <ul class="footer-social">
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/KylloxStudio"><i class="fab fa-github"></i></a></li>
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCd2bfrmZWJ52sQjFDGZKeXQ"><i class="fab fa-youtube"></i></a></li>
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/KylloxStudio"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <button id="donate-ko">
+                    <span aria-label="coffee"><i class="fa-solid fa-mug-hot"></i></span>
+                    <span>커피 한 잔 선물하기</span>
+                </button>
+            </div>
         </div>
     </footer>
 
 
-    <div id="durango-dialog" class="dialog">
-        <div id="durango-dialog-content" class="dialog-content">
-            <span class="dialog-close">&times;</span>
-            <div class="dialog-header">
-                <h5 class="dialog-title"><b>Kyllox's Durango Studio</b></h5>
-            </div>
-            <div class="dialog-text-wrap">
-                <p class="dialog-text">Kyllox의 듀랑고 실험실입니다. 듀랑고 관련 코딩 소식 / 현황을 업로드합니다.</p>
-            </div>
-            <div class="dialog-image-wrap">
-                <a id="durango-dialog-image" class="dialog-image-zoom-in"><img src="../images/durango-image.jpg" alt="Durango Image"></a>
-            </div>
-        </div>
-    </div>
-
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/jquery.fittext.js"></script>
     <script src="../scripts/jquery.easing.min.js"></script>
     <script src="../scripts/jquery.validate.min.js"></script>
+    <script src="../scripts/jquery.magnific-popup.js"></script>
     <script src="../scripts/jquery.detectmobilebrowsers.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
