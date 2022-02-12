@@ -581,7 +581,23 @@ button.stroke, .button.stroke {
 	}
 
     .intro-content .intro-position span {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
+    }
+
+    .intro-content .intro-position span::after {
+        content: "|";
+        text-align: center;
+        display: inline-block;
+        padding: 0 4px 0 7px;
+        color: rgba(255, 255, 255, 0.35);
+    }
+    
+    .intro-content .intro-position span:first-child::before {
+        content: "|";
+        text-align: center;
+        display: inline-block;
+        padding: 0 7px 0 4px;
+        color: rgba(255, 255, 255, 0.35);
     }
 
     .intro-social {
