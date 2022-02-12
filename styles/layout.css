@@ -1514,7 +1514,7 @@ p.lead a:hover {
     .skill-bars li .percent40 span::after {
         position: absolute;
         left: 50%;
-        bottom: 26px;
+        bottom: 25px;
         margin-left: -5px;
         border-top: none;
         border-right: 5px solid transparent;
