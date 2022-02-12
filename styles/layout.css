@@ -575,6 +575,20 @@ button.stroke, .button.stroke {
 	color: #70b7f3;
 }
 
+@media (max-width: 578px) {
+    .intro-content h5 {
+		font-size: 1.35rem;
+	}
+
+    .intro-content .intro-position span {
+        font-size: 0.95rem;
+    }
+
+    .intro-social {
+        font-size: 1.65rem;
+    }
+}
+
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
@@ -1476,6 +1490,24 @@ p.lead a:hover {
 .skill-bars li .percent95  { width: 95%; }
 .skill-bars li .percent100 { width: 100%; }
 
+@media (max-width: 428px) {
+    .skill-bars li .percent40 span {
+        top: 1.25rem;
+    }
+
+    .skill-bars li .percent40 span::after {
+        position: absolute;
+        left: 50%;
+        bottom: 26px;
+        margin-left: -5px;
+        border-top: none;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid #313131;
+        content: "";
+    }
+}
+
 .button-section {
 	text-align: center;
 }
@@ -1535,6 +1567,7 @@ p.lead a:hover {
 		width: 6.6rem;
 		float: none;
 		display: inline-block;
+        margin: -2.25rem 0 0 0;
 	}
 
 	.intro-info .lead {
