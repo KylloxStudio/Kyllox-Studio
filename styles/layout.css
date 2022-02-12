@@ -1051,7 +1051,8 @@ nav ol {
     border-color: #ffffff;
 }
 
-#mainnav li li:hover>a {
+#mainnav li li:hover>a,
+#mainnav li li>a.active {
     color: #70b7f3;
 }
 
