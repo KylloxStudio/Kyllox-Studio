@@ -46,10 +46,26 @@
         }
 
         if (lang == "ko") {
+            var agent = navigator.userAgent.toLowerCase();
+            if (agent.indexOf('trident') != -1 || agent.indexOf("msie") != -1) {
+                alert("이 웹사이트는 인터넷 익스플로러(IE)를 지원하지 않습니다.");
+                window.close();
+                return;
+            }
             location.replace("ko/main" + domain);
         } else if (lang == "en") {
+            if (agent.indexOf('trident') != -1 || agent.indexOf("msie") != -1) {
+                alert("This website does not support Internet Explorer.");
+                window.close();
+                return;
+            }
             location.replace("en/main" + domain);
         } else {
+            if (agent.indexOf('trident') != -1 || agent.indexOf("msie") != -1) {
+                alert("This website does not support Internet Explorer.");
+                window.close();
+                return;
+            }
             location.replace("en/main" + domain);
         }
     </script>
