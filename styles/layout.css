@@ -5,38 +5,10 @@
 /* Copyright [Google Fonts - Google] [https://fonts.google.com] */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-/* Copyright [InfinitySans - 위메이드(WEMADE)] [https://www.wemade.com/Company/Ci] */
-@font-face {
-    font-family: 'InfinitySans Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'InfinitySans Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'InfinitySans CondBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-CondBoldA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Copyright [NanumSquare - Naver] [https://hangeul.naver.com/font] */
 @font-face {
-    font-family: 'NanumSquare Regular';
+    font-family: 'NanumSquare';
     src: url('../fonts/NanumSquareR.ttf');
-}
-
-/* Copyright [PermanentMarker Font - Google] [https://fonts.google.com/specimen/Permanent+Marker] */
-@font-face {
-    font-family: 'PermanentMaker';
-    src: url('../fonts/PermanentMarker-Regular.ttf');
 }
 
 /* Copyright [Raleway Font - Google] [https://fonts.google.com/specimen/Raleway] */
@@ -421,7 +393,7 @@ a {
 	color: #ffffff;
 	font-family: "Poppins Medium", sans-serif;
 	font-size: 5.75rem;
-    font-weight: 600;
+    font-weight: bold;
 	line-height: 1.05;
 	max-width: 900px;
 	margin-bottom: 0.75rem;
@@ -629,7 +601,7 @@ button.stroke, .button.stroke {
 }
 
 #contact {
-    background-color: #161616;
+    background-color: #151515;
     padding: 6.25rem 0 2.5rem 0;
 }
 
@@ -672,10 +644,10 @@ button.stroke, .button.stroke {
     padding: 2.25rem 1.25rem;
     border: 0;
     outline: none;
-    font-family: "NanumSquare Regular", sans-serif;
+    font-family: "NanumSquare", sans-serif;
     font-size: 1.1rem;
     line-height: 1.25rem;
-    font-weight: 800;
+    font-weight: bolder;
     letter-spacing: 1px;
     max-width: 100%;
     background: transparent;
@@ -693,9 +665,9 @@ button.stroke, .button.stroke {
 }
 
 .contact-form .error {
-    font-family: "NanumSquare Regular";
+    font-family: "NanumSquare";
     font-size: 1.05rem;
-    font-weight: 800;
+    font-weight: bolder;
     color: #ff1b1b;
     letter-spacing: 1px;
 }
@@ -732,7 +704,7 @@ button.stroke, .button.stroke {
 
 #copyright {
     padding: 0 2.5rem 4.25rem 2.5rem;
-    background-color: #161616;
+    background-color: #151515;
     font-family: "Poppins Medium";
 }
 
@@ -814,8 +786,8 @@ footer #donate-ko:hover {
 }
 
 footer #donate-ko span {
-    font-family: 'NanumSquare Regular';
-    font-weight: 600;
+    font-family: 'NanumSquare';
+    font-weight: bolder;
     color: #121212;
     padding: 0 2px;
 }
@@ -1320,17 +1292,17 @@ p img {
 }
 
 p.lead {
-	font-family: "NanumSquare Regular", serif;
+	font-family: "NanumSquare", serif;
 	font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: bold;
 	line-height: 1.8;
 	color: #717171;
 }
 
 p.lead a {
-	font-family: "NanumSquare Regular", serif;
+	font-family: "NanumSquare", serif;
 	font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: bold;
 	line-height: 1.8;
 	color: #717171;
 }
@@ -1737,9 +1709,9 @@ p.lead a:hover {
 }
 
 .popup-modal .description-box p {
-	font-family: "NanumSquare Regular", sans-serif;
+	font-family: "NanumSquare", sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 0.1rem;
     line-height: 1.25rem;
     margin-bottom: 12px;
@@ -1973,4 +1945,53 @@ p.lead a:hover {
 
 .utterances {
     max-width: 100% !important;
+}
+
+.no-js {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2001;
+}
+
+.no-js-text {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.no-js h1 {
+    font-family: 'NanumSquare';
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #151515;
+    line-height: 1.51;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-js p {
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-js a {
+    color: #4099ff;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-js a:hover {
+    text-decoration: underline;
 }

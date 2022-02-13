@@ -367,7 +367,7 @@ const msnry = new Masonry('#projects-wrapper', {
 
 const scrollDisable = function() {
     $('html').addClass('hidden-scroll');
-    $('.dialog').on('scroll touchmove mousewheel', function(event) {
+    $('html').on('scroll touchmove mousewheel', function(event) {
         event.preventDefault();
         event.stopPropagation();
         return false;
@@ -376,7 +376,7 @@ const scrollDisable = function() {
 
 const scrollAble = function() {
     $('html').removeClass('hidden-scroll');
-    $('.dialog').off('scroll touchmove mousewheel');
+    $('html').off('scroll touchmove mousewheel');
 };
 
 const reloadPage = function() {
