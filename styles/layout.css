@@ -818,7 +818,7 @@ button.stroke, .button.stroke {
     width: 100%;
     max-width: 740px;
     color: #ffffff;
-    font-family: 'InfinitySans Regular';
+    font-family: 'InfinitySans Bold';
     letter-spacing: 1px;
 }
 
@@ -831,8 +831,7 @@ button.stroke, .button.stroke {
     width: 100%;
     max-width: 598px;
     color: #ffffff;
-    font-family: 'InfinitySans Regular';
-    letter-spacing: 1px;
+    font-family: 'InfinitySans Bold';
 }
 
 #message-warning i {
