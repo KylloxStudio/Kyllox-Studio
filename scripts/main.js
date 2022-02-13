@@ -60,6 +60,9 @@
                 if ($('#g-recaptcha-response').val() == null || $('#g-recaptcha-response').val() == "") {
                     $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>reCAPTCHA 인증을 진행해주세요.</label>");
                 } else {
+                    var loader = $('#submit-loader');
+                    loader.fadeIn();
+
                     const template = {	
                         name: $('input[name=name-ko]').val(),
                         title: $('input[name=title-ko]').val(),
@@ -68,13 +71,15 @@
                     };
             
                     emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
-                        window.alert("이메일을 성공적으로 전송했습니다. 작성해주신 이메일 주소로 답변이 전송됩니다." + "\n" + response.status + " " + response.text);
-                        $('input[name=name-ko]').val("");
-                        $('input[name=title-ko]').val("");
-                        $('input[name=email-ko]').val("");
-                        $('textarea[name=message-ko]').val("");
+                        loader.fadeOut();
+                        $('#message-warning').hide();
+                        $('#contact-form-ko').fadeOut();
+                        $('#message-success').html("<i class='fa fa-check'></i>이메일을 성공적으로 전송했습니다. 작성해주신 이메일 주소로 답변이 전송됩니다.</p><br>" + "<p>" + response.status + "</p>" + " " + response.text);
+                        $('#message-success').fadeIn();
                     }, function(e) {
-                        window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e.status + " " + e.text);
+                        loader.fadeOut();
+                        $('#message-warning').html("<i class='fa fa-xmark'></i>이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요.<br>" + "<p>" + e.status + "</p>" + " " + e.text);
+		                $('#message-warning').fadeIn();
                     });
                 }
             }
@@ -125,6 +130,9 @@
                 if ($('#g-recaptcha-response').val() == null || $('#g-recaptcha-response').val() == "") {
                     $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>Please proceed with the reCAPTCHA certification.</label>");
                 } else {
+                    var loader = $('#submit-loader');
+                    loader.fadeIn();
+
                     const template = {	
                         name: $('input[name=name-en]').val(),
                         title: $('input[name=title-en]').val(),
@@ -133,13 +141,15 @@
                     };
             
                     emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
-                        window.alert("You have successfully sent an email. I will send my answer to your email address." + "\n" + response.status + " " + response.text);
-                        $('input[name=name-en]').val("");
-                        $('input[name=title-en]').val("");
-                        $('input[name=email-en]').val("");
-                        $('textarea[name=message-en]').val("");
+                        loader.fadeOut();
+                        $('#message-warning').hide();
+                        $('#contact-form-en').fadeOut();
+                        $('#message-success').html("<i class='fa fa-check'></i>You have successfully sent an email. I will send my answer to your email address.<br>" + "<p>" + response.status + "</p>" + " " + response.text);
+                        $('#message-success').fadeIn();
                     }, function(e) {
                         window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e.status + " " + e.text);
+                        $('#message-warning').html("<i class='fa fa-xmark'></i>Failed to send email. Please try again in a few minutes.<br>" + "<p>" + e.status + "<p>" + " " + e.text);
+		                $('#message-warning').fadeIn();
                     });
                 }
             }
