@@ -818,7 +818,9 @@ button.stroke, .button.stroke {
     width: 100%;
     max-width: 740px;
     color: #ffffff;
-    font-family: 'InfinitySans Bold';
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 #message-success {
@@ -828,9 +830,11 @@ button.stroke, .button.stroke {
     padding: 2.25rem;
     margin: 0 auto 3.5rem auto;
     width: 100%;
-    max-width: 598px;
+    max-width: 590px;
     color: #ffffff;
-    font-family: 'InfinitySans Bold';
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 #message-warning i {
