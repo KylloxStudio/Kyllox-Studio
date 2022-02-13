@@ -73,8 +73,6 @@
                         $('input[name=title-ko]').val("");
                         $('input[name=email-ko]').val("");
                         $('textarea[name=message-ko]').val("");
-                        $('.g-recaptcha').remove();
-                        $('#g-recaptcha-form').html("<div class='g-recaptcha' data-sitekey='6LePCCMcAAAAAE0F2XW3lp0H0LuFjRlE-UXlZkcu'></div>");
                     }, function(e) {
                         window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e.status + " " + e.text);
                     });
@@ -140,8 +138,6 @@
                         $('input[name=title-en]').val("");
                         $('input[name=email-en]').val("");
                         $('textarea[name=message-en]').val("");
-                        $('.g-recaptcha').remove();
-                        $('#g-recaptcha-form').html("<div class='g-recaptcha' data-sitekey='6LePCCMcAAAAAE0F2XW3lp0H0LuFjRlE-UXlZkcu'></div>");
                     }, function(e) {
                         window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e.status + " " + e.text);
                     });
