@@ -1272,6 +1272,11 @@ textarea:focus,
     background-color: rgba(130, 183, 223, .65); /* #82b7df */
 }
 
+body {
+    color: #a1a1a1;
+    background-color: #151515;
+}
+
 
 /* Header */
 
