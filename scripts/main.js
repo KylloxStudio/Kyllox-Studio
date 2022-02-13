@@ -147,7 +147,6 @@
                         $('#contact-form-en').fadeOut();
                         $('#message-success').html("<i class='fa fa-check'></i>You have successfully sent an email. I will send my answer to your email address.<br>" + "<p>" + response.status + "</p>" + " " + response.text);
                         $('#message-success').fadeIn();
-                        $('#message-warning').hide();
                     }, function(e) {
                         window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e.status + " " + e.text);
                         $('#message-warning').html("<i class='fa fa-xmark'></i>Failed to send email. Please try again in a few minutes.<br>" + "<p>" + e.status + "<p>" + " " + e.text);
