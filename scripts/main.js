@@ -57,6 +57,9 @@
                 }
             },
             submitHandler: function() {
+                if ($('#g-recaptcha-response').val() == "") {
+                    $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>reCAPTCHA 인증을 진행해주세요.</label>");
+                } else {
                     const template = {	
                         name: $('input[name=name-ko]').val(),
                         title: $('input[name=title-ko]').val(),
@@ -71,8 +74,9 @@
                         $('input[name=email-ko]').val("");
                         $('textarea[name=message-ko]').val("");
                     }, function(e) {
-                        window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + JSON.stringify(e));
+                        window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e);
                     });
+                }
             }
         });
     };
