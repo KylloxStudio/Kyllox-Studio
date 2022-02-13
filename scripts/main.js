@@ -157,7 +157,7 @@
         $(window).on('load', function() {
             $("#loader").fadeOut("slow", function() {
                 $("#preloader").delay(100).fadeOut("slow");
-                scrollAble();
+                scrollAble('#preloader');
             });
         });
 
@@ -246,11 +246,11 @@
         $(document).on('click', '.popup-modal-dismiss', function(e) {
             e.preventDefault();
             $.magnificPopup.close();
-            scrollAble();
+            scrollAble('.popup-modal');
         });
 
         $(document).on('click', '.mfp-wrap', function(e) {
-            scrollAble();
+            scrollAble('.popup-modal');
         });
 
         $('body').prepend('<a href="#top" class="back-to-top page-scroll"></a>');
@@ -371,9 +371,9 @@ const scrollDisable = function(name) {
     });
 };
 
-const scrollAble = function() {
+const scrollAble = function(name) {
     $('html').removeClass('hidden-scroll');
-    $('#preloader').off('scroll touchmove mousewheel');
+    $(name).off('scroll touchmove mousewheel');
 };
 
 const reloadPage = function() {
