@@ -74,6 +74,9 @@
                         $('input[name=email-ko]').val("");
                         $('textarea[name=message-ko]').val("");
                         $('#g-recaptcha-response').val("");
+                        $('.recaptcha-checkbox-checked').addClass('.recaptcha-checkbox-unchecked');
+                        $('.recaptcha-checkbox-checked').removeClass();
+                        $('.recaptcha-checkbox-checked').setAttribute("aria-checked", false);
                     }, function(e) {
                         window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e.status + " " + e.text);
                     });
@@ -140,6 +143,9 @@
                         $('input[name=email-en]').val("");
                         $('textarea[name=message-en]').val("");
                         $('#g-recaptcha-response').val("");
+                        $('.recaptcha-checkbox-checked').addClass('.recaptcha-checkbox-unchecked');
+                        $('.recaptcha-checkbox-checked').removeClass();
+                        $('.recaptcha-checkbox-checked').setAttribute("aria-checked", false);
                     }, function(e) {
                         window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e.status + " " + e.text);
                     });
