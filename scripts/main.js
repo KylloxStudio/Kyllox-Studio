@@ -1,5 +1,10 @@
 (function($) {
-    "use strict"; 
+    "use strict";
+
+    var agent = navigator.userAgent.toLowerCase();
+    if (agent.indexOf('trident') != -1 || agent.indexOf("msie") != -1) {
+        alert("인터넷 익스플로러(IE) 사용을 권장하지 않습니다.");
+    }
 
     const page = $('html, body');
 
