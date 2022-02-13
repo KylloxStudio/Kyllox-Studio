@@ -252,26 +252,22 @@
                 }
             },
             submitHandler: function() {
-                if ($('#g-recaptcha-response').val() == "") {
-                    $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>reCAPTCHA 인증을 진행해주세요.</label>");
-                } else {
-                    const template = {	
-                        name: $('input[name=name-ko]').val(),
-                        title: $('input[name=title-ko]').val(),
-                        email : $('input[name=email-ko]').val(),
-                        message : $('textarea[name=message-ko]').val()
-                    };
-            
-                    emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
-                        window.alert("이메일을 성공적으로 전송했습니다. 작성해주신 이메일 주소로 답변이 전송됩니다." + "\n" + response.status + " " + response.text);
-                        $('input[name=name-ko]').val("");
-                        $('input[name=title-ko]').val("");
-                        $('input[name=email-ko]').val("");
-                        $('textarea[name=message-ko]').val("");
-                    }, function(e) {
-                        window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e);
-                    });
-                }
+                const template = {	
+                    name: $('input[name=name-ko]').val(),
+                    title: $('input[name=title-ko]').val(),
+                    email : $('input[name=email-ko]').val(),
+                    message : $('textarea[name=message-ko]').val()
+                };
+        
+                emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
+                    window.alert("이메일을 성공적으로 전송했습니다. 작성해주신 이메일 주소로 답변이 전송됩니다." + "\n" + response.status + " " + response.text);
+                    $('input[name=name-ko]').val("");
+                    $('input[name=title-ko]').val("");
+                    $('input[name=email-ko]').val("");
+                    $('textarea[name=message-ko]').val("");
+                }, function(e) {
+                    window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e);
+                });
             }
         });
     };
@@ -317,26 +313,22 @@
                 },
             },
             submitHandler: function() {
-                if ($('#g-recaptcha-response').val() == "") {
-                    $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>Please proceed with the reCAPTCHA certification.</label>");
-                } else {
-                    const template = {	
-                        name: $('input[name=name-en]').val(),
-                        title: $('input[name=title-en]').val(),
-                        email : $('input[name=email-en]').val(),
-                        message : $('textarea[name=message-en]').val()
-                    };
-            
-                    emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
-                        window.alert("You have successfully sent an email. I will send my answer to your email address." + "\n" + response.status + " " + response.text);
-                        $('input[name=name-en]').val("");
-                        $('input[name=title-en]').val("");
-                        $('input[name=email-en]').val("");
-                        $('textarea[name=message-en]').val("");
-                    }, function(e) {
-                        window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e);
-                    });
-                }
+                const template = {	
+                    name: $('input[name=name-en]').val(),
+                    title: $('input[name=title-en]').val(),
+                    email : $('input[name=email-en]').val(),
+                    message : $('textarea[name=message-en]').val()
+                };
+        
+                emailjs.send('service_kyllox', 'template_kyllox', template).then(function(response) {
+                    window.alert("You have successfully sent an email. I will send my answer to your email address." + "\n" + response.status + " " + response.text);
+                    $('input[name=name-en]').val("");
+                    $('input[name=title-en]').val("");
+                    $('input[name=email-en]').val("");
+                    $('textarea[name=message-en]').val("");
+                }, function(e) {
+                    window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e);
+                });
             }
         });
     };
