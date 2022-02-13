@@ -29,31 +29,32 @@
     <script data-ad-client="ca-pub-6698934439909858" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if (agent.indexOf('trident') != -1 || agent.indexOf("msie") != -1) {
+            alert("인터넷 익스플로러(IE) 사용을 권장하지 않습니다.");
+        }
+        
         var lang;
         var domain;
 
         if (navigator.language != null) {
             lang = navigator.language;
             lang = lang.toLowerCase().substring(0, 2);
-        }
-        else {
+        } else {
             lang = "undefined";
         }
 
         if (location.href.indexOf(".studio") > -1 || location.href.indexOf(".xyz") > -1 || location.href.indexOf(".com") > -1 || location.href.indexOf(".app") > -1) {
             domain = "";
-        }
-        else {
+        } else {
             domain = ".html";
         }
 
         if (lang == "ko") {
             location.replace("ko/main" + domain);
-        }
-        else if (lang == "en") {
+        } else if (lang == "en") {
             location.replace("en/main" + domain);
-        }
-        else {
+        } else {
             location.replace("en/main" + domain);
         }
     </script>
