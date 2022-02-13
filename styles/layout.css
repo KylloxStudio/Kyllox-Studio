@@ -796,14 +796,26 @@ button.stroke, .button.stroke {
 	}
 }
 
-#message-warning,
-#message-success {
+#message-warning {
     display: none;
     background: #0d0d0d;
     border-radius: 3px;
     padding: 2.25rem;
     margin-bottom: 3.5rem;
     width: 100%;
+    color: #ffffff;
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#message-success {
+    display: none;
+    background: #0d0d0d;
+    border-radius: 3px;
+    padding: 2.25rem;
+    margin: 0 auto 3.5rem auto;
+    width: 590px;
     color: #ffffff;
     font-family: 'NanumSquare';
     font-weight: bold;
