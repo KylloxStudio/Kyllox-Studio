@@ -57,7 +57,7 @@
                 }
             },
             submitHandler: function() {
-                if ($('#g-recaptcha-response').val() == "") {
+                if ($('#g-recaptcha-response').val() == null || $('#g-recaptcha-response').val() == "") {
                     $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>reCAPTCHA 인증을 진행해주세요.</label>");
                 } else {
                     const template = {	
@@ -73,6 +73,7 @@
                         $('input[name=title-ko]').val("");
                         $('input[name=email-ko]').val("");
                         $('textarea[name=message-ko]').val("");
+                        $('#g-recaptcha-response').val("");
                     }, function(e) {
                         window.alert("이메일 전송에 실패하였습니다. 잠시 후 다시 시도해주세요." + "\n" + e.status + " " + e.text);
                     });
@@ -122,7 +123,7 @@
                 },
             },
             submitHandler: function() {
-                if ($('#g-recaptcha-response').val() == "") {
+                if ($('#g-recaptcha-response').val() == null || $('#g-recaptcha-response').val() == "") {
                     $('#error-label').html("<label id='recaptcha-error' class='error' for='#'>Please proceed with the reCAPTCHA certification.</label>");
                 } else {
                     const template = {	
@@ -138,6 +139,7 @@
                         $('input[name=title-en]').val("");
                         $('input[name=email-en]').val("");
                         $('textarea[name=message-en]').val("");
+                        $('#g-recaptcha-response').val("");
                     }, function(e) {
                         window.alert("Failed to send email. Please try again in a few minutes." + "\n" + e.status + " " + e.text);
                     });
