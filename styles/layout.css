@@ -11,6 +11,21 @@
     src: url('../fonts/NanumSquareR.ttf');
 }
 
+/* Copyright [Infinity Sans - Wemade] [https://wemade.com/Company/Ci] */
+@font-face {
+    font-family: 'InfinitySans Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Copyright [Raleway Font - Google] [https://fonts.google.com/specimen/Raleway] */
 @font-face {
     font-family: 'Raleway';
@@ -680,12 +695,10 @@ button.stroke, .button.stroke {
     border-color: #70b7f3;
 }
 
-.contact-form .error {
-    font-family: "NanumSquare";
-    font-size: 1.05rem;
-    font-weight: bolder;
+.form-field label.error {
+    font-family: "InfinitySans Bold";
+    font-size: 1rem;
     color: #ff1b1b;
-    letter-spacing: 1px;
 }
 
 .g-recaptcha {
@@ -805,8 +818,7 @@ button.stroke, .button.stroke {
     width: 100%;
     max-width: 740px;
     color: #ffffff;
-    font-family: 'NanumSquare';
-    font-weight: bold;
+    font-family: 'InfinitySans Regular';
     letter-spacing: 1px;
 }
 
@@ -819,8 +831,7 @@ button.stroke, .button.stroke {
     width: 100%;
     max-width: 590px;
     color: #ffffff;
-    font-family: 'NanumSquare';
-    font-weight: bold;
+    font-family: 'InfinitySans Regular';
     letter-spacing: 1px;
 }
 
@@ -852,7 +863,7 @@ button.stroke, .button.stroke {
 
 #copyright .text {
     color: #a1a1a1;
-    margin: 2rem 0 0 0;
+    margin: 2.75rem 0 0 0;
     padding: 0;
     font-size: 14px;
 }
@@ -928,8 +939,7 @@ footer #donate-ko:hover {
 }
 
 footer #donate-ko span {
-    font-family: 'NanumSquare';
-    font-weight: bolder;
+    font-family: 'InfinitySans Bold';
     color: #121212;
     padding: 0 2px;
 }
@@ -958,7 +968,7 @@ footer #donate-en:hover {
 }
 
 footer #donate-en span {
-    font-family: 'Poppins Medium';
+    font-family: 'Poppins SemiBold';
     color: #121212;
     padding: 0 2px;
 }
@@ -1383,17 +1393,15 @@ p img {
 }
 
 p.lead {
-	font-family: "NanumSquare", serif;
-	font-size: 1.25rem;
-    font-weight: bold;
+	font-family: "InfinitySans Bold", sans-serif;
+	font-size: 1.2rem;
 	line-height: 1.8;
 	color: #717171;
 }
 
 p.lead a {
-	font-family: "NanumSquare", serif;
-	font-size: 1.25rem;
-    font-weight: bold;
+	font-family: "InfinitySans Bold", sans-serif;
+	font-size: 1.2rem;
 	line-height: 1.8;
 	color: #717171;
 }
@@ -1803,7 +1811,7 @@ p.lead a:hover {
 	font-family: "NanumSquare", sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1px;
     line-height: 1.25rem;
     margin-bottom: 12px;
 }
@@ -2058,20 +2066,16 @@ p.lead a:hover {
 }
 
 .no-js h1 {
-    font-family: 'NanumSquare';
-    font-size: 2.1rem;
-    font-weight: bold;
+    font-family: 'InfinitySans Bold';
+    font-size: 2.25rem;
     color: #151515;
     line-height: 1.51;
-    letter-spacing: 0.05rem;
     text-align: center;
     margin: 0 auto;
 }
 
 .no-js p {
-    font-family: 'NanumSquare';
-    font-weight: bold;
-    letter-spacing: 0.05rem;
+    font-family: 'InfinitySans Bold';
     text-align: center;
     margin: 0 auto;
 }
