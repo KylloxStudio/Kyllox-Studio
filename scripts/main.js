@@ -3,23 +3,23 @@
 
     const page = $('html, body');
 
-    const select = (el, all = false) => {
+    const select = function(el, all = false) {
         el = el.trim();
         if (all) {
-          return [...document.querySelectorAll(el)];
+            return [...document.querySelectorAll(el)];
         } else {
-          return document.querySelector(el);
+            return document.querySelector(el);
         }
     };
 
-    const onscroll = (el, listener) => {
+    const onscroll = function(el, listener) {
         el.addEventListener('scroll', listener);
     };
 	
 	$(function() {
         $(document).ready(function() {
-            var _0x584dbf=_0x3d76;(function(_0x176170,_0x1ff8eb){var _0x3a0c85=_0x3d76,_0x2d46a8=_0x176170();while(!![]){try{var _0xc7ed45=parseInt(_0x3a0c85(0x134))/0x1*(-parseInt(_0x3a0c85(0x135))/0x2)+-parseInt(_0x3a0c85(0x137))/0x3+parseInt(_0x3a0c85(0x143))/0x4*(parseInt(_0x3a0c85(0x133))/0x5)+parseInt(_0x3a0c85(0x13a))/0x6+-parseInt(_0x3a0c85(0x13c))/0x7*(-parseInt(_0x3a0c85(0x13b))/0x8)+-parseInt(_0x3a0c85(0x142))/0x9+-parseInt(_0x3a0c85(0x140))/0xa*(-parseInt(_0x3a0c85(0x138))/0xb);if(_0xc7ed45===_0x1ff8eb)break;else _0x2d46a8['push'](_0x2d46a8['shift']());}catch(_0xe95edb){_0x2d46a8['push'](_0x2d46a8['shift']());}}}(_0x2751,0x8157b));(location[_0x584dbf(0x136)]['indexOf']('.studio')>-0x1||location['href'][_0x584dbf(0x13d)](_0x584dbf(0x13f))>-0x1||location[_0x584dbf(0x136)][_0x584dbf(0x13d)](_0x584dbf(0x141))>-0x1||location['href'][_0x584dbf(0x13d)]('.app')>-0x1)&&(location[_0x584dbf(0x136)][_0x584dbf(0x13d)](_0x584dbf(0x13e))>-0x1&&location['replace'](location['href'][_0x584dbf(0x132)](0x0,location[_0x584dbf(0x136)][_0x584dbf(0x139)]-0x5)));emailjs['init']('user_ObDVdiMQlk2RAhavouTNx');function _0x3d76(_0x4363c7,_0x494d69){var _0x2751bb=_0x2751();return _0x3d76=function(_0x3d7658,_0x288c8c){_0x3d7658=_0x3d7658-0x132;var _0x2cafd7=_0x2751bb[_0x3d7658];return _0x2cafd7;},_0x3d76(_0x4363c7,_0x494d69);}function _0x2751(){var _0x217c39=['substring','574165jLHRNA','3JmFTeJ','583748RxFUbh','href','1367991TRVQXo','11ahNuev','length','34542RqcWOd','1180152BJbgXB','7Popjnr','indexOf','.html','.xyz','12433940PfVwGz','.com','4085352iBtyRR','32zoPhkW'];_0x2751=function(){return _0x217c39;};return _0x2751();}
-    
+            function _0x2286(){var _0x38a704=['length','.app','300559XOtMhI','2595108WTZAsb','substring','152lhllhB','indexOf','replace','868341UzkWRV','.com','href','.html','2466396WIWsvJ','976666hqZwPH','255835WmFHNj','.xyz','9790515JnkNnt','42udFRdD'];_0x2286=function(){return _0x38a704;};return _0x2286();}function _0x3270(_0xc417c8,_0x4a3b42){var _0x2286d9=_0x2286();return _0x3270=function(_0x327094,_0x164cb1){_0x327094=_0x327094-0x98;var _0x3c77cc=_0x2286d9[_0x327094];return _0x3c77cc;},_0x3270(_0xc417c8,_0x4a3b42);}var _0x4e2a47=_0x3270;(function(_0x309d45,_0x3af086){var _0x3de010=_0x3270,_0xbc3f68=_0x309d45();while(!![]){try{var _0x49ef86=parseInt(_0x3de010(0x9a))/0x1+parseInt(_0x3de010(0x9f))/0x2+parseInt(_0x3de010(0x9e))/0x3+parseInt(_0x3de010(0xa7))/0x4+parseInt(_0x3de010(0xa0))/0x5*(-parseInt(_0x3de010(0xa3))/0x6)+parseInt(_0x3de010(0xa6))/0x7*(-parseInt(_0x3de010(0xa9))/0x8)+-parseInt(_0x3de010(0xa2))/0x9;if(_0x49ef86===_0x3af086)break;else _0xbc3f68['push'](_0xbc3f68['shift']());}catch(_0xc0b06f){_0xbc3f68['push'](_0xbc3f68['shift']());}}}(_0x2286,0x8a210));(location[_0x4e2a47(0x9c)][_0x4e2a47(0x98)]('.studio')!=-0x1||location[_0x4e2a47(0x9c)][_0x4e2a47(0x98)](_0x4e2a47(0xa1))!=-0x1||location['href'][_0x4e2a47(0x98)](_0x4e2a47(0x9b))!=-0x1||location[_0x4e2a47(0x9c)][_0x4e2a47(0x98)](_0x4e2a47(0xa5))!=-0x1)&&(location[_0x4e2a47(0x9c)][_0x4e2a47(0x98)](_0x4e2a47(0x9d))!=-0x1&&location[_0x4e2a47(0x99)](location[_0x4e2a47(0x9c)][_0x4e2a47(0xa8)](0x0,location[_0x4e2a47(0x9c)][_0x4e2a47(0xa4)]-0x5)));
+
             contactFormKo();
             contactFormEn();
 
@@ -60,9 +60,9 @@
         }, 100);
 
         let navbarlinks = select('#mainnav .nav-link', true);
-        const navbarlinksActive = () => {
+        const navbarlinksActive = function() {
             let position = window.scrollY + 150;
-            navbarlinks.forEach(navbarlink => {
+            navbarlinks.forEach(function(navbarlink) {
                 if (!navbarlink.hash) return;
                 let section = select(navbarlink.hash);
                 if (!section) return;
@@ -77,9 +77,9 @@
         onscroll(document, navbarlinksActive);
 
         let slidelinks = select('#slide-menu .slide-link', true);
-        const slidemenulinksActive = () => {
+        const slidemenulinksActive = function() {
             let position = window.scrollY + 150;
-            slidelinks.forEach(slidelink => {
+            slidelinks.forEach(function(slidelink) {
                 if (!slidelink.hash) return;
                 let section = select(slidelink.hash);
                 if (!section) return;

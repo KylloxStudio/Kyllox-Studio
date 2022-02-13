@@ -1625,7 +1625,7 @@ p.lead a:hover {
 
 #projects .projects-item:hover .overlay {
     opacity: 1;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #projects .projects-item:hover .projects-item-cell {
