@@ -674,7 +674,7 @@ button.stroke, .button.stroke {
     letter-spacing: 1px;
 }
 
-.g-recaptcha {
+#g-recaptcha-form {
     margin-top: 1.5rem;
 }
 
