@@ -801,8 +801,9 @@ button.stroke, .button.stroke {
     background: #0d0d0d;
     border-radius: 3px;
     padding: 2.25rem;
-    margin-bottom: 3.5rem;
+    margin: 0 auto 3.5rem auto;
     width: 100%;
+    max-width: 740px;
     color: #ffffff;
     font-family: 'NanumSquare';
     font-weight: bold;
