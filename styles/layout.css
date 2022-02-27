@@ -1112,8 +1112,8 @@ nav ol {
 }
 
 #mainnav .drop::after {
-    top: 6.5px;
-    left: 5px;
+    top: 8px;
+    left: 4px;
 }
 
 #mainnav li li .drop::after {
@@ -1148,12 +1148,23 @@ nav ol {
 
 @media (min-width: 768px) {
     .nav-items {
+        position: relative;
+        right: 0;
         display: block;
         float: right;
     }
 
     .ham {
         display: none;
+    }
+}
+
+@media (max-width: 1048px) {
+    .nav-items {
+        position: relative;
+        right: 5%;
+        display: block;
+        float: right;
     }
 }
 
@@ -1860,26 +1871,8 @@ p.lead a:hover {
 	transform: translateY(-100%);
 }
 
-@media (min-width: 1140px) {
-    .hoc {
-        max-width: 85%;
-    }
-}
-
-@media (min-width: 978px) and (max-width: 1140px) {
-    .hoc {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 978px) {
-    .hoc {
-        max-width: 90%;
-    }
-
-    #mainnav form {
-        display: block;
-    }
+.hoc {
+    max-width: 85%;
 }
 
 @media (max-width: 768px) {
