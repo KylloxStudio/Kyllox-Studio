@@ -1162,7 +1162,7 @@ nav ol {
 @media (max-width: 1048px) {
     .nav-items {
         position: relative;
-        right: 5%;
+        right: 3.5%;
         display: block;
         float: right;
     }
