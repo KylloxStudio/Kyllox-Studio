@@ -1227,14 +1227,26 @@ a.back-to-top {
 	width: 2.65rem;
 	height: 2.65rem;
 	border-radius: 50%;
-	background: #298eff url("../images/up-arrow.png") no-repeat center 46%;
+    color: #ffffff !important;
+	background: #298eff;
     background-size: 1.15rem 1.15rem;
-	text-indent: -9999px;
     transition: all 0.15s ease-in-out;
 }
 
 a:hover.back-to-top {
 	background-color: #4099ff;
+}
+
+a.back-to-top::after {
+    display: inline-block;
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 1.25rem;
+    line-height: inherit;
+    text-align: center;
+    position: relative;
+    top: 0.5rem;
+    left: 0.875rem;
 }
 
 
