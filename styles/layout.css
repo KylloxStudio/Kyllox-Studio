@@ -917,7 +917,7 @@ footer .copyright span:last-child::after {
 	display: none;
 }
 
-footer #donate-ko {
+footer #donate {
     align-items: center;
     background: #70b7f3;
     border-radius: 2.25rem;
@@ -935,42 +935,13 @@ footer #donate-ko {
     float: right;
 }
 
-footer #donate-ko:hover {
+footer #donate:hover {
     background: #56aff3;
     cursor: pointer;
 }
 
-footer #donate-ko span {
+footer #donate span {
     font-family: 'InfinitySans Bold';
-    color: #121212;
-    padding: 0 2px;
-}
-
-footer #donate-en {
-    align-items: center;
-    background: #70b7f3;
-    border-radius: 2.25rem;
-    border: none;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    margin-right: auto;
-    padding: 0 10px;
-    margin: 0 0 5.25rem 0;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    top: 40px;
-    left: 140px;
-    float: right;
-}
-
-footer #donate-en:hover {
-    background: #56aff3;
-    cursor: pointer;
-}
-
-footer #donate-en span {
-    font-family: 'Poppins SemiBold';
     color: #121212;
     padding: 0 2px;
 }
@@ -995,14 +966,7 @@ footer #donate-en span {
         float: none !important;
     }
 
-    footer #donate-ko {
-        margin: 0 0 2.25rem 0;
-        top: 12px;
-        left: 0;
-        float: none !important;
-    }
-
-    footer #donate-en {
+    footer #donate {
         margin: 0 0 2.25rem 0;
         top: 12px;
         left: 0;
