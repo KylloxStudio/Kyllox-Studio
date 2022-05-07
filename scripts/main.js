@@ -243,11 +243,6 @@
             $('#slide-pages-btn').toggleClass("active");
             $('#pages-up').toggleClass("active");
         });
-
-        $('#donate').click(function() {
-            var win = window.open('https://toss.me/kyllox', '_blank noopener noreferrer');
-            win.focus();
-        });
 	});
 })(jQuery);
 
