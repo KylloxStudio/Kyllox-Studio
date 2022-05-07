@@ -245,7 +245,7 @@
         });
 
         $('#donate').click(function() {
-            var win = window.open('https://toss.me/kyllox/5000', '_blank noopener noreferrer');
+            var win = window.open('https://toss.me/kyllox', '_blank noopener noreferrer');
             win.focus();
         });
 	});
